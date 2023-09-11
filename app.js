@@ -107,7 +107,7 @@ function speakThis(message) {
         const finalText = "This is what i found on internet regarding " + message;
         speech.text = finalText;
     }
-    else if(message.includes('friday play') || message.includes("...in youtube")) {
+    else if(message.includes('friday play') || message.includes("in youtube")) {
         window.open(`https://www.youtube.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what i found on youtube regarding " + message;
         speech.text = finalText;
