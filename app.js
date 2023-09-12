@@ -20,7 +20,7 @@ function greating(){
      speak("good afternoon bro");
     }
      else{
-     speak("good morning bro");
+     speak("good evening bro");
     }
  }
 window.addEventListener('load', ()=>{
