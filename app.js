@@ -91,7 +91,7 @@ function speakThis(message) {
         speech.text = finaltext;
     }
     else if(message.includes('bro open my website')){
-        window.open("https://akhilesh027.github.io/Akhileshreddy-protofilo/", "_block");
+        window.open("https://akhilesh027.github.io/Akhileshreddy-portfolio/", "_block");
         const finalText = "opening your protofilo bro";
         speech.text = finalText;
     }
