@@ -80,22 +80,22 @@ function speakThis(message) {
         const finalText = "Opening instagram";
         speech.text = finalText;
     }
-    else if(message.includes('bro open youtube') || message.includes("open youtude")) {
+    else if(message.includes('bro open youtube') || message.includes("open youTude") || message.includes("YouTube")) {
         window.open("https://youtube.com", "_blank");
         const finaltext = "opening youtube";
         speech.text = finaltext;
     }
-    else if(message.includes('bro open chat gpt') || message.includes("open chatgpt")) {
+    else if(message.includes('bro open chat gpt') || message.includes("open chat gpt")) {
         window.open("https://chat.openai.com/", "_blank");
         const finaltext = "opening chatgpt";
         speech.text = finaltext;
     }
-    else if(message.includes('bro open my website')){
+    else if(message.includes('bro open my website') || message.includes("portofilo website")){
         window.open("https://akhilesh027.github.io/Akhileshreddy-portfolio/", "_block");
         const finalText = "opening your protofilo bro";
         speech.text = finalText;
     }
-    else if(message.includes("bro open whatsapp")){
+    else if(message.includes("bro open whatsapp") || message.includes("open whatsapp")){
         window.open('https://web.whatsapp.com/', "_blank");
         const finalText = "opening whatsapp bro"
         speech.text = finalText;
@@ -111,11 +111,11 @@ function speakThis(message) {
         speech.text = finalText;
     }
        else if(message.includes('bro open spotify') || message.includes("in spotify") || message.includes("open spotify")) {
-        window.open(`https://open.spotify.com/`, "_blank");
+        window.open(`https://www.spotify.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what i found on youtube regarding " + message;
         speech.text = finalText;
     }
-    else if(message.includes('wikipedia')) {
+    else if(message.includes('about')) {
         window.open(`https://en.wikipedia.org/wiki/${message.replace("wikipedia", "")}`, "_blank");
         const finalText = "This is what i found on wikipedia regarding " + message;
         speech.text = finalText;
