@@ -115,6 +115,11 @@ function speakThis(message) {
         const finalText = "This is what i found on youtube regarding " + message;
         speech.text = finalText;
     }
+    else if(message.includes("open hacker rank")){
+        window.open(`https://www.hackerrank.com/dashboard`, "_blank")
+        const finalText= "openg hackerrank";
+        speech.text = finalText;
+    }
     else if(message.includes('about')) {
         window.open(`https://en.wikipedia.org/wiki/${message.replace("wikipedia", "")}`, "_blank");
         const finalText = "This is what i found on wikipedia regarding " + message;
