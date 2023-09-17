@@ -117,7 +117,7 @@ function speakThis(message) {
     }
     else if(message.includes("open hackerrank")){
         window.open(`https://www.hackerrank.com/dashboard`, "_blank")
-        const finalText= "openg hackerrank";
+        const finalText= "opening hackerrank";
         speech.text = finalText;
     }
     else if(message.includes('about')) {
